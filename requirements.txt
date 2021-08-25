@@ -1,0 +1,6 @@
+Download python 3 from python.org
+Check pip is installed by entering in command prompt: 'pip -V'
+Install the requests package by entering in command prompt: 
+	'pip install requests' or 'python -m pip install requests'
+Check requests is installed by intering in command prompt:
+	'pip list'
