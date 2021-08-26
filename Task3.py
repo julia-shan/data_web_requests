@@ -65,7 +65,7 @@ class graph(Resource):
         amazon = cur.execute("SELECT DATE, VOLUME FROM stocks WHERE STOCK='AMZN' ").fetchall()
         dates = []
         values = []
-        #Parse the retrieved data into date and values arrya
+        #Parse the retrieved data into date and values array
         for row in amazon:
             dates.append(parser.parse(row[0]))
             values.append(row[1])
@@ -74,8 +74,9 @@ class graph(Resource):
 
         #Label the title and axes of the plot
         plt.title('Volume of stocks over time')
-        plt.xlabel('Date (yyyy-mm-dd')
+        plt.xlabel('Date (yyyy-mm-dd)')
         plt.ylabel('Volume (number of stocks)')
+        plt.legend() #Legend to differentiate each stock 
         #Save the plot as a PNG
         plt.savefig('volume.png')
         return send_from_directory('','volume.png')
