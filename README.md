@@ -35,4 +35,4 @@ To access the GET/volume endpoint, paste the following into a web browser
  http://127.0.0.1:5000/volume
 
 This was my original endpoint, which displays a plot of the volume of stocks over team for each stock, Tesla, Amazon and Twitter. 
-I used the matplotlib package to plot the data which I then saved as a png file. I then returned this png as to the GET/volume endpoint.
+I used the matplotlib package to plot the data which I then saved as a png file. I then returned this png as to the GET/volume endpoint. I originally just returned 'plt.show()' to the endpoint, which opened another window containing the plot, however I wanted to diplay it on the same window so I saved it as an image.
