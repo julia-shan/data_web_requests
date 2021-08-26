@@ -5,7 +5,7 @@ startdate = "2000-07-02T13:00:00"
 enddate = "2000-07-02T13:59:59"
 
 #Values below retrieved from data tool https://www.ncdc.noaa.gov/cdo-web/datatools
-datasetID = 'PRECIP_15' #dataset ID for 15 minute precipitation 
+datasetID = 'PRECIP_HLY' #dataset ID for 15 minute precipitation is 'PRECIP_15' which also returns no results
 datatypeID = 'HPCP'   #datatype ID - precipitation in inches  
 locationID = 'FIPS:15' #locationID for Hawaii
 token = {'token' : 'aPztadhIyezpvJutqLeJSxTFazwTkDPI'}

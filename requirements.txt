@@ -2,5 +2,12 @@ Download python 3 from python.org
 Check pip is installed by entering in command prompt: 'pip -V'
 Install the requests package by entering in command prompt: 
 	'pip install requests' or 'python -m pip install requests'
-Check requests is installed by intering in command prompt:
+Install the following packages by entering the above command into command prompt, replacing 'requests' with the followg:
+	- flask
+	- flask_restful
+	- matplotlib
+	- python-dateutil
+	
+Check the required packages are installed by entering in command prompt:
 	'pip list'
+

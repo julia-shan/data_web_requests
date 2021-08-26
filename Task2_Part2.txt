@@ -1,5 +1,0 @@
-SQLite Query executed:
-
-SELECT strftime('%Y', DATE) as year, AVG(VOLUME), STOCK
-FROM stocks
-GROUP BY STOCK, year; 

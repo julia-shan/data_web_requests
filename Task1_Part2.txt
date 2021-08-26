@@ -1,0 +1,19 @@
+Firstly, to set up daily data collection for rainfall, we should firstly prepare the Python script.
+The script should include all the requests needed to collect the data using teh NOAA API. This should include
+precipitation data in all the states required in json format. The script should also include instructions to 
+convert the retrieved json data into an sqlite database, which can then be converted into a csv file if needed.
+This database could be stored online, instead of locally, for easy access. To schedule daily data collection, 
+we can use Windows Task Scheduler to run our python script daily. With windows task scheduler, we can set up the
+script to run daily at a specified time, which we can do by either creating a batch file which includes the path
+where Python exe is stored and the path where the script is stored. Alternatively we can select the paths in windows
+task scheduler. We can set this automation to execute on a remote computer, as long as we know the IP address of 
+the remote computer and it is part of the same domain. Windows task scheduler has an option to 'Connect to Another 
+Computer' for this purpose, if other colleagues need access to the script. Otherwise, we can just set the script
+to run locally, with the data collected being sent to an online database. However, windows task scheduler does not
+execute if the computer is off, and if this is the case, we can use the website PythonAnywhere which gives
+access to a 24/7 computer. We can upload our Python script and schedule it to run daily. Errors with this method 
+will likely arise due to either connection issues which could result in bad requests. This would be a server hosting
+issue, which would may be able to be resovled my moving the automatic script execution to a more reliable web server.
+It is unlikely the script itself would be causing any errors; rather the connect to the API or to the online database
+may cause issues. We could solve this by setting up an SQL server, which may be a more reliable way of storing 
+information.
