@@ -74,7 +74,7 @@ class graph(Resource):
 
         #Label the title and axes of the plot
         plt.title('Volume of stocks over time')
-        plt.xlabel('Date (yyyy-mm-dd)')
+        plt.xlabel('Date (year)')
         plt.ylabel('Volume (number of stocks)')
         plt.legend() #Legend to differentiate each stock 
         #Save the plot as a PNG
