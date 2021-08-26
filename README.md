@@ -21,10 +21,11 @@ I used DBBrowser (SQLite) to view the database and to execute the above query. I
 
 #Task 3
 
-To run the REST API webserver, run the Task3.py script. Make sure the script is running while accessing endpoints
+To run the REST API webserver, run the Task3.py script. Make sure
+ the script is running while accessing endpoints
 
 Paste the following in a web browser:
- http://127.0.0.1:5000/ - this is the home page (should just display 'Stocks API')
+ http://127.0.0.1:5000/ - this is the home page (should just display 'Julia Shan's Stocks API')
 
 To access the GET/stocks endpoint, paste the following into a web browser
  http://127.0.0.1:5000/stocks
@@ -32,6 +33,5 @@ To access the GET/stocks endpoint, paste the following into a web browser
 To access the GET/volume endpoint, paste the following into a web browser
  http://127.0.0.1:5000/volume
 
-This was my original endpoint, which displays a plot of the volume of stocks over team for each stock, Tesla, Amazon and Twitter
-I used the matplotlib package to plot the data which I then saved as a png file
-I then returned this png as to the GET/volume endpoint.
+This was my original endpoint, which displays a plot of the volume of stocks over team for each stock, Tesla, Amazon and Twitter. 
+I used the matplotlib package to plot the data which I then saved as a png file. I then returned this png as to the GET/volume endpoint.
