@@ -5,7 +5,8 @@ Refer to requirements.txt to set up environment and packages
 
 #Task 1
 
-Run Task1.py. The data for average precipitaton in Hawaii on the 2nd of July 2000 should be printed. However, there was no data recorded for this time, for both hourly and 15 min precipitation
+Run Task1.py. The data for average precipitaton in Hawaii on the 2nd of July 2000 should be printed. However, there was no data recorded for this time, for both hourly and 15 min precipitation.
+
 Part 2 of this task is typed in Task1_Part2.txt
 
 #Task 2
