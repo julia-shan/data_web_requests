@@ -1,29 +1,23 @@
-# Quantiful_data_test
+# data_web_requests
 Author: Julia Shan
 
+This repo was for me to learn about web requests, how to extract data from APIs, and how to manipulate data
 Refer to requirements.txt to set up environment and packages
 
 #Task 1
 
+Task 1 was using the NDCC api to find climate data
 Run Task1.py. The data for average precipitaton in Hawaii on the 2nd of July 2000 should be printed. However, there was no data recorded for this time, for both hourly and 15 min precipitation.
 
-Part 2 of this task is typed in Task1_Part2.txt
-
 #Task 2
+Task 2 was using the Alpha Vantage api to collect stock data. I collected the weekly time series data for Tesla, Twitter and Amazon for the last 15 years and stored them in a SQLite database. I then wrote an SQl query to retrieve the average volume per year for each stock and stored the result in stocks.csv
 
 Run Task2.py. The data should be stored in the database 'stock.db'. This can be deleted and will be created again when re-running the script
-The SQLite Query executed for part 2 of this task was:
-
-SELECT strftime('%Y', DATE) as year, AVG(VOLUME), STOCK
-FROM stocks
-GROUP BY STOCK, year; 
-
-I used DBBrowser (SQLite) to view the database and to execute the above query. I then stored the result in stocks.csv
 
 #Task 3
+Task 3 was creating a REST API using the Python framework flask. The GET/stocks endpoint lists the names of the available stocks from task 2. The GET/volume endpoint  displays a plot of the volume of stocks over team for each stock
 
-To run the REST API webserver, run the Task3.py script. Make sure
- the script is running while accessing endpoints
+To run the REST API webserver, run the Task3.py script. Make sure the script is running while accessing endpoints
 
 Paste the following in a web browser:
  http://127.0.0.1:5000/ - this is the home page (should just display 'Julia Shan's Stocks API')
@@ -33,6 +27,3 @@ To access the GET/stocks endpoint, paste the following into a web browser
 
 To access the GET/volume endpoint, paste the following into a web browser
  http://127.0.0.1:5000/volume
-
-This was my original endpoint, which displays a plot of the volume of stocks over team for each stock, Tesla, Amazon and Twitter. 
-I used the matplotlib package to plot the data which I then saved as a png file. I then returned this png as to the GET/volume endpoint. I originally just returned 'plt.show()' to the endpoint, which opened another window containing the plot, however I wanted to diplay it on the same window so I saved it as an image.
